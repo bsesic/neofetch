@@ -196,6 +196,18 @@ get_distro() {
             distro="${distro/Caption}"
             distro="${distro/Microsoft }"
         ;;
+        
+        "Atari")
+            distro=""
+        ;;
+
+        "Atari-st")
+            distro=""
+        ;;
+
+        "C64")
+            distro=""
+        ;;
 
         "Solaris")
             case "$distro_shorthand" in
@@ -3485,6 +3497,21 @@ get_distro_colors() {
         "Windows"*)
             set_colors 1 2 4 3
             ascii_file="windows"
+        ;;
+
+        "Atari"*)
+            set_colors 1 3 2 6 4 5 
+            ascii_file="atarist"
+        ;;
+
+        "Atari-st"*)
+            set_color 1 3 2 6 4 5
+            ascii_file="atarist"
+        ;;
+
+        "C64"*)
+            set_colors 18 1
+            ascii_file="c64"
         ;;
 
         "Xubuntu"*)
